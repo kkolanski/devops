@@ -6,6 +6,7 @@ pipeline {
             steps {
                 sh 'pwd'
             }
+        }
         stage('prepare test env') {
             steps {
                 sh 'docker compose up'
