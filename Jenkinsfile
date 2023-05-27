@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo hej'
+                sh 'pwd'
+            }
+        stage('prepare test env') {
+            steps {
+                sh 'docker compose up'
             }
         }
     }
